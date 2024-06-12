@@ -22,7 +22,7 @@ import { toast } from "react-toastify";
 import Link from "next/link";
 import MultipleLeadGuidesSelect from "./MultipleLeadGuidesSelect";
 
-function AdminTourUpdate({ tour }) {
+function AdminTourUpdate({ tour, guides, leadGuides }) {
   const { push } = useRouter();
   const [state, formAction] = useFormState(updateTour, null);
   const { images, coverImage, startingDate, chosenGuides, chosenLeadGuides } =
@@ -31,7 +31,7 @@ function AdminTourUpdate({ tour }) {
   useEffect(() => {
     if (state?.success) {
       toast.success("Tour updated successfully");
-      window.location.reload()
+      push(`/admin/tours`);
     } else if (state?.error) {
       toast.error(state?.error);
     }
@@ -443,13 +443,13 @@ function AdminTourUpdate({ tour }) {
           <small>
             <b>Guides</b>
           </small>
-          <MultipleSelect guides={tour?.guides} />
+          <MultipleSelect guides={guides} />
         </span>
         <span>
           <small>
             <b>Lead Guides</b>
           </small>
-          <MultipleLeadGuidesSelect guides={tour?.leadGuides || []} />
+          <MultipleLeadGuidesSelect guides={leadGuides} />
         </span>
       </div>
 
