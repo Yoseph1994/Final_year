@@ -34,11 +34,13 @@ async function NavbarUser() {
                 Profile
               </Link>
             </DropdownMenuItem>
-            <DropdownMenuItem>
-              <Link href={"/user/tours"} className="h-full w-full">
-                My tours
-              </Link>
-            </DropdownMenuItem>
+             {user?.role.toLowerCase() == "user" && (
+              <DropdownMenuItem>
+                <Link href={"/user/tours"} className="h-full w-full">
+                  My tours
+                </Link>
+              </DropdownMenuItem>
+            )}
             {user?.role.toLowerCase() != "user" && (
               <DropdownMenuItem>
                 <Link href={"/admin/dashboard"} className="h-full w-full">
