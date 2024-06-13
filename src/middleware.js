@@ -92,6 +92,12 @@ export async function middleware(request) {
     }
   }
 
+  if (isValid) {
+    if (userInfo?.role !== "admin" && path === "/admin/dashboard/newUser") {
+      return NextResponse.redirect(new URL("/admin/dashboard", request.url));
+    }
+  }
+
   if (path === "/dashboard") {
     return NextResponse.redirect(new URL("/admin/dashboard", request.url));
   }
