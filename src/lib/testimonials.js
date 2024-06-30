@@ -27,8 +27,8 @@ const testimonials = [
   },
   {
     image:
-      "https://res.cloudinary.com/dgtrmhlsp/image/upload/v1718221902/44618f26-93a7-48be-abd4-e8623fd92caf_z0z1ou.jpg",
-    name: "Kidist Deriba",
+      "https://res.cloudinary.com/dgtrmhlsp/image/upload/v1719767981/Screenshot_20240630-201812_Instagram_Lite_pklstz.jpg",
+    name: "Yabsera sileshi",
     review:
       "Good tour overall, but a few minor issues with the schedule. Still, a great way to see the area.An amazing experience! The tour was well organized and the sights were breathtaking. An amazing experience! The tour was well organized and the sights were breathtaking",
     rating: 3,
@@ -51,8 +51,8 @@ const testimonials = [
   },
   {
     image:
-      "https://res.cloudinary.com/dgtrmhlsp/image/upload/v1718221570/f59c88b4-0ba8-4c3c-9456-b162fd55086a_iccfn1.jpg",
-    name: "Misikir Digafe",
+      "https://res.cloudinary.com/dgtrmhlsp/image/upload/v1719768337/Screenshot_20240630-202252_Instagram_Lite_of0zh8.jpg",
+    name: "Edil",
     review:
       "I had a great time on this tour. The locations were beautiful and the service was fantastic.",
     rating: 5,
