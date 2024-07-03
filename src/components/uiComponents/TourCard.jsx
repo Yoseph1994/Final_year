@@ -28,7 +28,7 @@ async function TourCard({ data }) {
         <CardContent>
           <b className="line-clamp-1">{data?.name}</b>
           <Rating value={rating} />
-          <b>${data?.price}</b>
+          <b>ETB{data?.price}</b>
         </CardContent>
       </Card>
     </Link>
