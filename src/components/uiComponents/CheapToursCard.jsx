@@ -18,7 +18,7 @@ function CheapToursCard({ data }) {
       <div className="relative p-4 flex flex-col justify-between h-full">
         <span>
           <p className="text-sm font-bold uppercase tracking-tighter bg-white w-fit p-1">
-            ${data.price}
+            ETB {data.price}
           </p>
 
           <p className="text-xl font-bold text-white sm:text-2xl line-clamp-1">
