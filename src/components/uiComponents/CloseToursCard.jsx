@@ -20,7 +20,7 @@ function CloseToursCard({ data }) {
         </CardHeader>
         <CardContent>
           <b className="line-clamp-1">{data?.name}</b>
-          <b>${data?.price}</b>
+          <b>ETB {data?.price}</b>
         </CardContent>
       </Card>
     </Link>
