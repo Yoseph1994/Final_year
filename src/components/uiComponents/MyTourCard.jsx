@@ -34,7 +34,7 @@ function MyTourCard({ item }) {
               {item.tour.name}
             </h3>
             <h5 className="font-semibold uppercase text-slate-700">
-              ${item.price}
+               {item.price}
             </h5>
             <h5 className="font-semibold text-slate-700">Status: Booked</h5>
             <h5 className="font-semibold text-slate-700">
