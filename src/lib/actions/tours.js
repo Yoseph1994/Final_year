@@ -261,7 +261,7 @@ export const fetchClosestTour = async (lat, long) => {
               type: "Point",
               coordinates: [Number(lat), Number(long)],
             },
-            $maxDistance: 100000,
+            $maxDistance: 300000,
           },
         },
       })
