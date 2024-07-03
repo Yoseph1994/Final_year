@@ -255,7 +255,7 @@ export const fetchClosestTour = async (lat, long) => {
     await connectDB();
     const closeTours = await tourModel
       .find({
-        location: {
+        "locations.coordinates": {
           $near: {
             $geometry: {
               type: "Point",
